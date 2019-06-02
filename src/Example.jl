@@ -1,5 +1,5 @@
 module Example
-export hello, domath
+export hello, domath, myfunc
 
 """
     hello(who::String)
@@ -14,5 +14,7 @@ hello(who::String) = "Hello, $who"
 Return `x + 5`.
 """
 domath(x::Number) = x + 5
+
+myfunc(x::Number) = 2x
 
 end
